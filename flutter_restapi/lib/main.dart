@@ -1,20 +1,19 @@
-
+import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_restapi/pages/home/home.dart';
 import 'package:flutter_restapi/pages/login/login.dart';
 import 'package:flutter_restapi/view_models/profile_view_model.dart';
+import 'package:flutter_restapi/view_models/register_view_model.dart';
 import 'package:provider/provider.dart';
 
 import 'view_models/login_view_model.dart';
 
 void main() {
-  runApp(MultiProvider(
-    providers: [
-      ChangeNotifierProvider(create: (_) => ProfileViewModel()),
-      ChangeNotifierProvider(create: (_) => LoginViewModel()),      
-    ],
-    child: const MyApp()));
+  runApp(MultiProvider(providers: [
+    ChangeNotifierProvider(create: (_) => ProfileViewModel()),
+    ChangeNotifierProvider(create: (_) => LoginViewModel()),
+    ChangeNotifierProvider(create: (_) => RegisterViewModel()),
+  ], child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -27,11 +26,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const LoginPage(),
     );
   }
 }
-
