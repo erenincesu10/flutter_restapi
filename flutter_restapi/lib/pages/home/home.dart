@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:model_dart/models/user_model.dart';
-import 'package:model_dart/pages/profile/profile.dart';
-import 'package:model_dart/view_models/profile_view_model.dart';
+import 'package:flutter_restapi/models/user_model.dart';
+import 'package:flutter_restapi/pages/profile/profile.dart';
+import 'package:flutter_restapi/view_models/profile_view_model.dart';
 
 import 'package:provider/provider.dart';
 

@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:flutter_restapi/pages/home/home.dart';
+import 'package:flutter_restapi/pages/register/register.dart';
 import 'package:flutter_restapi/view_models/login_view_model.dart';
 import 'package:provider/provider.dart';
 import 'dart:ui';

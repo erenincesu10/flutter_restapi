@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:model_dart/view_models/register_view_model.dart';
+import 'package:flutter_restapi/view_models/register_view_model.dart';
 import 'package:provider/provider.dart';
 
 class RegisterPage extends StatefulWidget {

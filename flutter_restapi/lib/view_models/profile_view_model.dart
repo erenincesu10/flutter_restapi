@@ -1,12 +1,10 @@
 import 'dart:convert';
 import 'dart:developer';
+import 'package:flutter_restapi/models/user_model.dart';
+import 'package:flutter_restapi/services/response_model.dart';
+import 'package:flutter_restapi/services/services.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
-import 'package:model_dart/constants/service_constants.dart';
-import 'package:model_dart/models/user_model.dart';
-import 'package:model_dart/services/response_model.dart';
-import 'package:model_dart/services/services.dart';
-
 class ProfileViewModel extends ChangeNotifier {
   User? user;
   List<User> users = [];

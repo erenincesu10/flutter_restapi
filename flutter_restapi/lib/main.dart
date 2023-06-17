@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_model/pages/login/login.dart';
-import 'package:flutter_model/view_models/profile_view_model.dart';
-import 'package:flutter_model/view_models/register_view_model.dart';
+import 'package:flutter_restapi/pages/login/login.dart';
+import 'package:flutter_restapi/view_models/profile_view_model.dart';
+import 'package:flutter_restapi/view_models/register_view_model.dart';
 import 'package:provider/provider.dart';
 
 import 'view_models/login_view_model.dart';

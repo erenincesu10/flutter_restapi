@@ -1,8 +1,8 @@
 import 'dart:convert';
 
+import 'package:flutter_restapi/constants/service_constants.dart';
+import 'package:flutter_restapi/services/response_model.dart';
 import 'package:http/http.dart' as http;
-import 'package:model_dart/constants/service_constants.dart';
-import 'package:model_dart/services/response_model.dart';
 
 class Services {
   Future<ResponseModel> getUser(int id) async {
