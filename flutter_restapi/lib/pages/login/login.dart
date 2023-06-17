@@ -39,7 +39,7 @@ class _LoginPageState extends State<LoginPage> {
                 labelText: "Password",prefixIcon: Icon(Icons.password_rounded)),),
             SizedBox(height: 20,),
             ElevatedButton(onPressed: (){
-              context.read<ProfileViewModel>().getUser();
+              context.read<LoginViewModel>().login();
             }, child: Text("Login"),style: ElevatedButton.styleFrom(
               backgroundColor: Colors.blue,
               minimumSize: Size(MediaQuery.of(context).size.width*0.8, 50)
